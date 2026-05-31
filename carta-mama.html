@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Para Mamá ❤️</title>
+<style>
+  @font-face {
+    font-family: 'Mapii';
+    src: url('Mapii-Regular.otf') format('opentype');
+    font-weight: normal;
+  }
+
+  :root {
+    --cream: #FDF6EE;
+    --blush: #F2C4CE;
+    --rose: #D4748E;
+    --deep: #8B3A52;
+    --gold: #C9956A;
+    --ink: #3A2030;
+    --petal1: #F7D6DE;
+    --petal2: #EDA8B8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: var(--cream);
+    min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--ink);
+    overflow-x: hidden;
+  }
+
+  /* Petals falling */
+  .petals-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .petal {
+    position: absolute;
+    top: -40px;
+    border-radius: 50% 0 50% 0;
+    opacity: 0;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    0%   { transform: translateY(0) rotate(0deg) translateX(0); opacity: 0; }
+    10%  { opacity: 0.7; }
+    90%  { opacity: 0.5; }
+    100% { transform: translateY(110vh) rotate(360deg) translateX(60px); opacity: 0; }
+  }
+
+  /* Cover screen */
+  #cover {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #fce8ef 0%, #fdf1e8 50%, #fce8ef 100%);
+    cursor: pointer;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  #cover.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+  }
+
+  .cover-tulip {
+    font-size: 80px;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 8px 20px rgba(212,116,142,0.3));
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  .cover-title {
+    font-family: 'Mapii', Georgia, serif;
+    font-size: 52px;
+    color: var(--deep);
+    margin-top: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .cover-subtitle {
+    font-size: 13px;
+    color: var(--rose);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  .tap-hint {
+    position: absolute;
+    bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .tap-hint span {
+    font-size: 12px;
+    color: var(--rose);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .tap-hint .arrow {
+    font-size: 20px;
+    color: var(--rose);
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* Letter */
+  #letter {
+    position: relative;
+    z-index: 5;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 0 60px;
+    opacity: 0;
+    transition: opacity 1s ease 0.3s;
+  }
+
+  #letter.visible { opacity: 1; }
+
+  /* Wax seal header */
+  .letter-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px 32px;
+    position: relative;
+  }
+
+  .seal {
+    width: 72px;
+    height: 72px;
+    background: radial-gradient(circle at 40% 35%, #e8a0b0, var(--rose) 60%, var(--deep));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 4px 20px rgba(139,58,82,0.35), inset 0 2px 6px rgba(255,255,255,0.3);
+    margin-bottom: 20px;
+    animation: sealPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    animation-delay: 0.8s;
+    transform: scale(0);
+  }
+
+  @keyframes sealPop {
+    to { transform: scale(1); }
+  }
+
+  .header-date {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  /* Paper card */
+  .paper {
+    margin: 0 16px;
+    background: #fffaf5;
+    border-radius: 2px;
+    padding: 36px 28px 40px;
+    box-shadow: 0 2px 0 rgba(201,149,106,0.15), 0 8px 40px rgba(139,58,82,0.08), 0 1px 0 rgba(201,149,106,0.3) inset;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .paper::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 32px;
+    width: 1px; height: 100%;
+    background: rgba(242,196,206,0.4);
+  }
+
+  .paper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      transparent,
+      transparent 27px,
+      rgba(242,196,206,0.18) 27px,
+      rgba(242,196,206,0.18) 28px
+    );
+    pointer-events: none;
+  }
+
+  .saludo {
+    font-family: 'Mapii', Georgia, serif;
+    font-size: 38px;
+    color: var(--deep);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    position: relative;
+    z-index: 1;
+  }
+
+  .paragraph {
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: #4a2f40;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .paragraph.show {
+    opacity: 1;
+    transform: none;
+  }
+
+  .divider {
+    text-align: center;
+    color: var(--blush);
+    font-size: 18px;
+    letter-spacing: 6px;
+    margin: 24px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Signature */
+  .firma {
+    padding: 32px 28px 16px;
+    text-align: right;
+  }
+
+  .firma-text {
+    font-family: 'Mapii', Georgia, serif;
+    font-size: 30px;
+    color: var(--deep);
+    line-height: 1.2;
+  }
+
+  .firma-heart {
+    font-size: 22px;
+    display: block;
+    margin-top: 6px;
+    animation: heartBeat 1.4s ease-in-out infinite;
+  }
+
+  @keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    14% { transform: scale(1.2); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.15); }
+    56% { transform: scale(1); }
+  }
+
+  /* Footer flowers */
+  .footer-flowers {
+    text-align: center;
+    padding: 24px 16px 40px;
+    font-size: 28px;
+    letter-spacing: 8px;
+    opacity: 0;
+    transition: opacity 1s ease 1.5s;
+  }
+
+  #letter.visible .footer-flowers {
+    opacity: 1;
+  }
+
+  /* Decorative corner */
+  .corner-deco {
+    position: fixed;
+    font-size: 40px;
+    opacity: 0.12;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .corner-deco.tl { top: 8px; left: 8px; transform: rotate(-20deg); }
+  .corner-deco.tr { top: 8px; right: 8px; transform: rotate(20deg); }
+</style>
+</head>
+<body>
+
+<div class="petals-canvas" id="petalsCanvas"></div>
+
+<span class="corner-deco tl">🌸</span>
+<span class="corner-deco tr">🌷</span>
+
+<!-- COVER -->
+<div id="cover" onclick="openLetter()">
+  <div class="cover-tulip">🌷</div>
+  <div class="cover-title">Para Mamá</div>
+  <div class="cover-subtitle">Con todo mi amor</div>
+  <div class="tap-hint">
+    <span>Toca para abrir</span>
+    <div class="arrow">↓</div>
+  </div>
+</div>
+
+<!-- LETTER -->
+<div id="letter">
+  <div class="letter-header">
+    <div class="seal">🌷</div>
+    <div class="header-date">Feliz Día de las Madres</div>
+  </div>
+
+  <div class="paper">
+    <div class="saludo">Maaaa,</div>
+
+    <p class="paragraph" data-delay="0">
+      Aunque no suelo expresar todo lo que siento o pienso, hoy quiero aprovechar este día para decirte algo que quizás no te digo tan seguido como debería: <strong>gracias</strong>.
+    </p>
+
+    <p class="paragraph" data-delay="1">
+      Gracias por tu amor, por tu paciencia, por tus consejos y por cada sacrificio que has hecho por mí. Gracias por estar presente en los momentos importantes, por apoyarme cuando lo he necesitado y por enseñarme tantas cosas que me acompañan cada día.
+    </p>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <p class="paragraph" data-delay="2">
+      Admiro tu fortaleza, tu dedicación y la forma en que siempre buscas lo mejor para quienes amas. Me has enseñado con tu ejemplo a ser perseverante, a enfrentar los retos con valentía y a valorar a las personas que tengo a mi alrededor.
+    </p>
+
+    <p class="paragraph" data-delay="3">
+      Quiero que sepas que valoro todo lo que haces por mí, incluso aquellas cosas que a veces pasan desapercibidas. Muchas veces no encuentro las palabras adecuadas para expresar mis sentimientos, pero eso no significa que no los sienta. <strong>Te quiero, te admiro</strong> y estoy muy agradecida de tenerte como mamá.
+    </p>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <p class="paragraph" data-delay="4">
+      Gracias por escucharme, por comprenderme, por celebrar mis alegrías y por acompañarme en los momentos difíciles. Gracias por ser esa persona en la que siempre puedo confiar.
+    </p>
+
+    <p class="paragraph" data-delay="5">
+      Hoy deseo que tengas un día lleno de felicidad, amor y tranquilidad, porque te mereces todo lo bueno que la vida pueda ofrecer. Espero que recuerdes siempre lo especial que eres y lo mucho que significas para mí.
+    </p>
+
+    <p class="paragraph" data-delay="6">
+      No podría haber pedido una mejor mamá. Gracias por ser tú, por tu amor incondicional y por todo lo que haces cada día.
+    </p>
+  </div>
+
+  <div class="firma">
+    <div class="firma-text">
+      Con todo mi amor,<br>
+      María Paula 🌷
+      <span class="firma-heart">❤️</span>
+    </div>
+  </div>
+
+  <div class="footer-flowers">🌸 🌷 🌸 🌷 🌸</div>
+</div>
+
+<script>
+  // Create petals
+  function createPetals() {
+    const canvas = document.getElementById('petalsCanvas');
+    const colors = ['#F7D6DE','#EDA8B8','#F2C4CE','#fcd5dc','#f9c0cb'];
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.classList.add('petal');
+      const size = 8 + Math.random() * 14;
+      p.style.cssText = `
+        width:${size}px; height:${size * 0.7}px;
+        left:${Math.random()*100}%;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        animation-duration:${6 + Math.random()*8}s;
+        animation-delay:${Math.random()*10}s;
+        opacity:0;
+        border-radius:${Math.random() > 0.5 ? '50% 0 50% 0' : '0 50% 0 50%'};
+        transform:rotate(${Math.random()*360}deg);
+      `;
+      canvas.appendChild(p);
+    }
+  }
+
+  createPetals();
+
+  function openLetter() {
+    document.getElementById('cover').classList.add('hidden');
+    const letter = document.getElementById('letter');
+    letter.classList.add('visible');
+
+    // Staggered paragraph reveal
+    const paragraphs = document.querySelectorAll('.paragraph');
+    paragraphs.forEach((p, i) => {
+      setTimeout(() => {
+        p.classList.add('show');
+      }, 600 + i * 350);
+    });
+  }
+
+  // Scroll-triggered paragraphs too (for slow readers)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('show');
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.paragraph').forEach(p => observer.observe(p));
+</script>
+</body>
+</html>
