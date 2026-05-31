@@ -7,7 +7,7 @@
 <style>
   @font-face {
     font-family: 'Mapii';
-    src: url('Mapii-Regular.otf') format('opentype');
+    src: url('data:font/otf;base64,AAEAAAANAIAAAwBQT1MvMlpdc40AAAFYAAAAYGNtYXCKTQ4VAAAC/AAAAh5jdnQgACECeQAABSQAAAAEZ2FzcAAAABAAAD3oAAAACGdseWYmaZ87AAAFzAAANShoZWFkLbVwowAAANwAAAA2aGhlYQYuAsUAAAEUAAAAJGhtdHhwAgOkAAABuAAAAURsb2Nh4T/uZAAABSgAAACkbWF4cACWAIEAAAE4AAAAIG5hbWVHL2BAAAA69AAAAiVwb3N0fbjQ4gAAPRwAAADMcHJlcGgGjIUAAAUcAAAABwABAAAAAQAA7ovAk18PPPUACwPoAAAAAOXxlmsAAAAA5fGWawAL/74CqAMqAAAACAACAAAAAAAAAAEAAAMq/74AWgK1AAAAAAKoAAEAAAAAAAAAAAAAAAAAAABRAAEAAABRAH4AAwAAAAAAAgAAAAEAAQAAAEAAAAAAAAAABAFiAZAABQAAAooCvAAAAIwCigK8AAAB4AAxAQIAAAIABQMAAAAAAAAAAAADAAAAAAAAAAAAAAAAQ0xHUgBAAAAgHgMg/zgAWgMqAEIAAAADAAAAAAHRAq4AAAAgAAEBbAAhANwAAAFNAAAA3AAAANwAAACLAA0A9QALAHAACwCRAAsAgAALAKcADACZAAsBFwANAg0ADAGFAA0BdwAMAeMADAGRAAwBVAAMAbkADAHKAAwBZwAMAQ8ADAIdAAwBrgANAkcADAIuAAwCBAAMAZsADAIfAAwBlQAMAYkADAHkAAwB3AAMAeEADAK1AAwB5AAMAbAADAJTAA0BeQAMAS0ADAEoAAwBYgAMAaIADADwAAwBHAAMATwADAByAAwBBQAMAUwADABpAAwBrwAMASYADAFXAAwBSgAMAU8ADAEoAAwBHQAMAQsADAFiAAwBcwAMAeQADAFYAAwBiwAMAX0ADADcAAAAqAANAKIACwFDAA0B5gALAXgADAE1AAwCEAAMAfIADAF7AAwBdAAMAaAADADeAAsBTgAMAYEADAGMAAwAAAADAAAAAwAAABwAAQAAAAABGAADAAEAAAAcAAQA/AAAADgAIAAEABgAAAANACIAJwAsAC4AOwA/AFoAegChALQAvwDBAMkAzQDRANMA2gDhAOkA7QDxAPMA+iAaIB7//wAAAAAADQAgACcALAAuADoAPwBBAGEAoAC0AL8AwQDJAM0A0QDTANoA4QDpAO0A8QDzAPogGCAc//8AAf/2/+T/4P/c/9v/0P/N/8z/xv+h/4//hf+E/33/ev93/3b/cP9q/2P/YP9d/1z/VgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYACgAAAAcABwAHAAYABgAGAAABBgAAAQAAAAAAAAABAgAAAAMAAAAAAAAAAAAAAAAAAAABAAAEBQYAAAAABwAAAAAIAAkAAAAAAAAAAAAAAAoLAAAADAANDg8QERITFBUWFxgZGhscHR4fICEiIyQlJgAAAAAAACcoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AAAAAAAAAAABGSAAASwAAAAAAAEwAAABNAAAATk8AAAAAUAAAAAAAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAAAAAAAAAAAREIAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARQAARwAAAEkAAABKAAAAAAAAAAAAAAAAAAAAuAH/hbAEjQAAIQJ5AAAAFAAUABQAFAAUAEwAjgCwANQA8AEoAXQBzgIoAqIC9ANEA6oD6AReBL4FFAVQBcAGAgaUBvYHXgfICFwI5gk6CY4J1gomCpgK/gtcC7oMGgx4DLgNDA1MDZAN+A5gDqIO9A9AD24P3BAiEHYQ8BFmEaoR8hImEnwSsBMcE2gTshQUFBQUTBR4FNQVXhXaFkgW5BeMF/wYehjqGSwZphocGpQAAgAhAAABKgKaAAMABwAAMxEhESczESMhAQnox8cCmv1mIQJYAAAAAAIADQCWAH0CnAARACIAABM2MzIXHgEfAQcjIicmNTQ3NgI2MzIXFhcUFhUUBiMiJyY1IQYICQ8cFwECIwoaEhABAgoMGg8NCggDChEbEg8ClQcGC1VpcAMTETwrIIT+RSAIByUFDwMJBAYGHAAAAAACAAsBwgDoAo4AFQAsAAATNjMyFx4BFRQHDgEHIgYjIicuATU0NzYzMhceARUUBwYjIicuATQzMicmNTQRBg0PGA0JAQIIDgIEAhMODQeJCw0QFg0JFgYaEgoHCwYJBQICfw8WDRUaGBA1GAIBCAcdNEkGCAsGCw0XYhcNCTkwFAUIDAABAAsBnQBkAqIAEwAAEz4BMzIWFxYVFAYHBiMiJy4BNTQMAggRFCEGAhMIBAoJChILAj9HHB8ZCA4pgggEAwQfMiwAAAEACwArAIUA9wAWAAA3NDMyFx4BFRQOAQcOASMiJyY1NDYzMi4XEBcRCAoYBggQEx8GAhMHCdMkCgYTIBwfIA4UDA8GCRxXAAEACwCLAHQA8QAPAAA3NjMyFxYVFAcGIyInJjU0GgoUIA0PAgYjKgsJ5woSFiALBA8TEBIYAAAAAgAMAI0AmgItABEAIwAAEzYzMhcWFAcGIyInLgEnJjU0EzQXFhcWFRQHBiMiJyY1NDMyNhAVGhMSEREZCQUaDAIBHAgHFhUgHg8SDAchFwIhDBMSFhMSAQILGAUIFv7kCwsKBwcTGBUVJRQOGQAAAAIAC//CAI0BfAAPADQAABM2MzIWFxYVFAcGIyImNTQXNjcyFhUUBwYVFBYVFCIWIyIXFhUUBwYVFAYjIicmNTQ3Njc2JRgLDRsFARsNCxggLRUTDCEEBwIQBgcMBwEJCiQPBAYMAwcCAQFwDBwRBAYNBQMUDRLoDAIdCgUBAwcCCgIIFBIDBQ8JCg8JEgIEEgwWLyIgAAAAAgANAGcBCQJ7ADMAQAAAEzQyFRQXHgEXFhUUBwYXFiMiBwYHBh0CFAYjIjU0LwE3NjU0JiMiBwYjIiYnJjU0NjcyEjYzMhcWFRQjIicmNUtEJiIYDwsGCwUHCQcODBkVERshCgsiLQcLChgWBhsbBQEaFBACHA4PDg0eDhIWAnEKCQcHBRovHwsIBQcQDxobIR0jDBMmGAkBUEklMUEJBwMCExgDBxAXAf4jHA4ODRcJDAgAAgAMAGcB/wKWAA4APAAAASYjIgcGFRQzMjY1NCcmJzYzMhYXFhcWFxYXHgEVFAcGIyImJy4BIyIGBwYHBhUUIyInJjU0NzY3PgE3NgErBAwVBggkEwwDBWQZEhRYDxEJDB4iCAkTAQcuHxQLDjRLMRwLDhYVFCgWDwgQDxRWDA4BsQgTFg0cBAkGDhHoFVwkKwQHYmMFB04ZCQMSDRoiFAkWGxoVDAsYEgsIEiMQGeM9SgAAAwANAG4BeAKNABEAJgBWAAAANCYjIgYjDwEGFRQXFjMyNjcTJiMiBw4BFRQXHgEzMjc2Nz4BNTQnPgEzMhceARUUBwYVFBcWFDIVFCIVFAYHDgEjIicmIyIHBiMiJjUuAScmNTQ2NzYBAxMfAxAFPAYDAwUqHBcRDAQNDCggGQECBgsDEiMRCxhzCk0lGAwQJhAKDxQUFB8TE0IgGhYLBgcGCiEUDAUHBwQvGygBBTIQAQM5GBMVAwsMGQE1DA4MGxkMBxUMAgYJBj4VBmIMDwQHTRsgLh4NCxcbFhgZEhNDFxUbCwYGCgkN/KgEAwQMHQQGAAEADACEAWoCmwA3AAATNjMyHgEVFAcOASMiJyYjIgYVFAcOARUeARceAjMeARUUBiMiJyYnJicmJyYiNTQ3PgE3NjU05QQIGkEcBwYKDAIiCA8mPQ4OHgEjGw4bGx9FFjMlBxBnFQwZGBQSEBMUViEkApoBFRoJCA0NCQQBGBENBwlYJChFDQcVBwIIFxghAhEVDBAOKShQUSYqWAwNBgcAAAAAAgAMAJIB1gKSABcANAAAATQiFRQrARE3Njc2Nz4BNzY1NCYjIgcGJzYzMhYVFBceARUUBwYHDgEHBiMiLwE3Njc+AgEhZhkaMS8GByMXEgcMHAsCAQmOJSBDbBMYJAsSBQhqOCQ9Uy4cBwgBAxErAi8MCwr+vAYFBgkVDhwfMzAiTAEFaAUbEwkEB2k2KBUfHylhEAoRCmmaMks8GwAAAAEADAByAYQClgBGAAABNjMyFxYVFAcGBwYHBgcOARUUFjMyNz4BMzIXFhUUBgcOASMiLwEXHgEzMjU0NjMyFhUUBiMiBwYjIicuATU0Ejc2NzY3NgEXNQwNEA8MEDQvFRIsHA8PCwwNCncYBwELFyQSTyULDi0EAw4aJVkXGikpGyIYIikMDBxdVBAUFxQQDgKIDg4PCQgXHhkUFRIFBQwQDQ8LCh8BBSMWIh0OFAIHKBsMCQcdGhEbKhYgAwhUExkBHh8mAgIICgAAAAEADABEAUcCvAAnAAATNxceARUUBiMiBgcGDwEXHgEVFAcOAQ8CBgcGIyInLgEjIjU0NzZyFk8/MSc2MhUMEAIENCYfCAsVKzsDAgYFExQMBA8EBhUZApgkBQQZGxwVChwmLSwBAQ4SDRogDwkLVlAbGBoLDzSDgI0AAAABAAwAUgGsApcAVwAAEzYzMhcWFRQHDgEjIicmIyIHDgEHBhUUFxYVFBYzMjc+Azc2NTQjIgcGIyI1NDc2NTQzMj4BNTQzMhUUNzYXFhUUBgcOAiMiJicmJyY1NDc2MzI3NtU0GEQQBQoJDAwJEgcPJB0eFw4pBQscGBAVExUIFAsWIgcUEgYlEhUUBwYBOUAHBgwMOy4yGFYcIjIFCgsNLCMIBCUkApIFIAwIDhERCwMBCAgUHVI6FBkyGxYZBgYJBRAHDQoMAgIRCxEVBwoDAwQJDAoFCBIPFiRPFRccHyoiMiInMlxaSiEhAAEADABaAb0CmQBDAAATNjMyFhUUFxYzMj8CJyY1NDY3NjMyFhUUBw4BBwYPATc2NzY1NCMiBwYHBgcGIyIGHQEHBhUUIyInJjU0NxIyFDMySAYTDgYKAgkeLWwiAwEHDBcWEA4JCgsOFhkbBgcGBAcFCRcwMQMEJCYVHR0HBgwMAhESBQsCgRghTXADAQYMAlMUGhkSCRAnN0CImEoNFAcGaWomGAIIAwcJCQoKIT1IBQYSEQ0MNQs+AXQUAAAAAAEADABvAVoCnwA7AAATNjMyFx4BFxYVFAYjIgYHBg8BHgEXFRQGBwYHBiMiNTQnJjU0NzYzMjY1NDc+ATc2NTQjIicmIyI1NDZBDyUmVEEkBQE9HBoMBgILBhhdFw4lPFUnFSMQCwwTCQwaCwoKBgI3JQUGCAoiApkGBgQJDgIEFjImZCVsNQEEASMaDgkPBQMNEQUFAwQOFSIPFAQEtiAQBjYUFQgMJQAAAAABAAwATQECAr4AKAAAEzYzMhYXFhUUIyIHDgEjIgcOASMiJyYnNTQzMhcWMzI2NzY1NCcmNTSaHAoOHQYRBQsHBh8KCBMMKxYUDyAFDQkjCgMSEw0PCgcCpxcsHleONTovWR8UGAkWRQsRCAIyTFdPRC8lBg8AAAABAAwAcgIQAqoATwAAEzYzMhYVFDMyNzY3PgEyNzYzMhUUBwYVFAcGFRQXFhcWFxYVFAcGBwYjIiY1NDc2JyYnJiMiBwYVFAYHBiMiJy4BJyY1NDY3NjU0JyY1NDZNDg0TEA8HDg8jJSQaG0dBKSstNWcaFiokGBEGDBoMBhQkAQQPDyFMHhAMDQkSEBgHCBENAgIQCQgCAhYCoAo+RmYUFRISOBk/HxYeHwcGIkIYDx8ZSkITDgoHCRQDAgsHAgELBgUweRwaSS4dCgkCBRMYFhM2dAICIggiGA86cAAAAAEADQCKAaEC2QAsAAATNjIXFhUUBwYHBhUUFjMyNzY3Njc2MzIWFRQGByIVFAYjIiYnJjU0NzY1NDZhGRoTEQMLKwkRFA0UOAcEPSISFRwtEQ7CKiIxCAELMQkCyBEODRkOGF/OKRUTEAMHCgYRCBQTDysBCQgnKyMEDCgy6VIkHQAAAAEADAB7Aj4CvwBsAAATNjMeARUUBwYVFBcWMzI3NiMiNTQ3Njc2NzY3NDc+ATc2MzIWFxYXFiMiFiMiFRQWFRQjIgcUBwYVFBcWFRQHBiMiJyY1NDc2NTQjIgYVFAYHBiMiJyYjIgcGIyInJjU0Nz4BNz4BNTQnJjU0pxUUGhgMFQgCBA0NFQYBExIeGg0NAi4hFhUFCQsJAwoBBAsHBggHAgMGAhIRBwMUDg4LCSIMCg8GNFQRFR0fDAoJChASIw8QGQwKPQ0VHQMEAp8gARkeHzdmcjsFAQkQAQYTEzgzDg0QDlxBHAIBCg8kAw0TCAMMAgQREVNVajYhDAcODQsEDj4hKB8hKUwJCmAKDA0NICkGCggDHxaaGzB1JA4JEAURAAABAAwAPwIhAqsAQQAAEzYzMhceARcWFxYXFjMyNzY1NDc2Nz4BNzY3NjMyFxYVFAcGBw4BBwYjIicuAScmIyIVFAcGBw4BIyImNTQ3Njc2tgsJDBQNCAQFCgkICRIaJh8QDgQCCAoREw0EBQoKGCskHRsSFxoNFhcWEBIMDRMQEw4XHhkWEF4ODgKjCA8KNWOWFhYwN2NSCwweG0coIgcLEQsNCxknMlaEaEocJAgJS3yFDhAoJEY5HQ0RECv1W08AAAAAAQAMAHkB9wKVAEkAABM2MzIWFRQGBwYHDgEdARQWFxYVFDMyNzY3NjU0JiMiJjQ3Njc2MzIWFx4BFRQGIyIXFhUUBwYHBhUUBw4BIyInLgEnJjU0Nz4BeR0hJDIRGi0KER0hKScGDixKFQMUFxseDxA5GgYUExERCiAKCQcBBh4HGiYZICc3LyJPEgwLDDwChw0fGQ4PBw0KEWYuBjg8ExQJCC1KlBgRGxYVIhQVBAILExQgJC2PGAQKEQgjCB4OECEYCxMOSyMWY1spJ1AAAAEADABmAY4C5wBMAAABNjMyFhceARUUBwYHDgEjIiY1NDY3Njc2NTQmIyIHDgEVFBYUFhUUBhUUFhUXBwYjIicmNTQ3NjU0JyY1NDc2FxYzMjU0MzI+Ajc2AQcDJhkXExEKAwcODXAwIw0OGGMKBhYSDQ8vOgEBDgEDHBsOEBELCwoDBAkNBQoqHA4GFQ4eDCAC4AcPGxgZGxcxaxcVJAgWEw8IHzQdGCMqDCZjKwIJBAYBFSZXBxwIewwLDw0YFWxdQSMbKggaDBMFCgwOFh4gBxEAAgAMABYCEwKfAC8AbAAAATQiFQYHDgEHBhUUFxYzMjY1NCY1NDMyFx4BMzI2NzQ2Nz4CNzY1NCMiBwYjIiYnPgEzMhcWMzI3NjMyFx4BFRQjIhUUBgcGBwYHBhUUFxYVFCIVFAYjIicmJy4BIyInJiImJyY1NDY3NjMyATs+AjYhGwcHFwkLDBIBCwcXKggJCkYBFwgECwoCARYEIB4GEAqIFR4bLBEQCwkMDDskDBEdDAtNEBQFCBMQJx4UFQ8MCxYdFhYuYh4NDhUFAwwSRxUJAicSBwsmGSEaGS1mFwoZFAMKAg4FBxZOCwouBwQtNAUDBQkCAgdeFg0UEw4PCApzLCUTEmoEBBMTEAwYKyUeGAwPCg0ECS0jC0UccEMgEBMXFlYAAAACAAwAewGJAr8AFQBjAAABLgEjIhQHDgEVFB8BFhcWMzI3NjU0Jz4BMzIWFx4BFRQHBgcGFRQXFhUUBwYjIjU0NzYnJicmJyYjIgYdAhQGBwYjIiY1NDc2Nz4BNTQnJjU0Nz4BMzI2NTQmNSY1NDYzMjYBFAMRBwgkFA0DCAEsEgQWBAZECxYZGxYQEhsCBx4XKSAtJwQCAwYSDzQxDgIDDhEaHwoEFRgCBgcHEgECAwQPFB8uAQMLCQUSAiQJDhIUCg0LBw4kAQYCDA0gJJITDA0ZHnEuDBIqIxoPEjwuGB0PDQIBBQkEBWJiBQE0KgYGMjIIAh8cBxApBgWDKBAEDAsTDBAKHBMBBAEJCQ0SEgAAAAABAAwAfAF9AowAOAAAEzYzMhceARUUBgcOARUUFx4BFxYVFAcGBwYHBiMiJy4BJzQzMhcWMjc+ATU0JicuAicmNTQ2NzbnFAgZHw4JDCY4SyNYPRYSFRoJEDAyHBgOCx4BERchHBgPEwwnPz4sFw4RFx1EAooCCgQTGR8LBQcnEhAHER4oHx0fFhwaIRgZEQ1fFg0VEAcIExQjGQQFChMdIhMRIiBHAAABAAwAnAHXArEAOQAAATY7AR4BFxUUBwYHDgEjIgcGFRQXFhcWFRQHBiMiJjU0NzY1NCYnLgEjIjU0NzYnJjU0Njc2NzY3NgFjHSQJFhICFh8KCk8TCxMNBhAMFxYcIxcfAQEYCQQWKjcBBgoGGw8XBQZ0cwKlDAEMDgYVCxMJChwVEBYSKl4sWQ8RCQ8NCwQCAQkizCwQCAoCAQ4GAwkPJAQEBwgUFAABAAwAgwHPAqwAMAAAATY7AR4BHQEGIyIVFAYHDgEHIicuATU0Nz4BNzYzMhcWFRQHBhUUFxYzMjc+AjU0AYIKHAgVCgMMB3QgJzwrTCkNCQQECQ4XFA8OCggHGAcUCgQgX0cCogoCCxUMWg0Z9CwzJwFKFyAiCWhpOg0RCQcYEkA1MmAVBgEIiqwzJwAAAAABAAwAggHUArwANQAAEzYzMhcWMzIXHgEzMjYzPgE3NjMyJjImMzI3PgE/AQcGBwYVDgEHBiMuAScmIyImJyYnJjU0FxAZJBQOCAkGDQoLAQUCE10CAggFBhIGBwwOCBgaKwYMYSsBUQ4QFCw8AQIIBQoCCA8LApMnRzJGgjgBA8EmIBYWIBIOAQMwWJVFDQ6hDg4BhWJRGREtKxsSEAAAAQAMAHcCqAKsAE8AAAE2MzIXFhcWFxYVFBcWMzI2Nz4BOwEeARUUBgcGBw4BIyInLgEnJicmIyIHDgEjIicuATU0IyInJicmNDc2MhcWFxYXFjMyNzY1NDc+ATU0ASYQIB0NDgYFDwwNBAQQJSIUIB8LGw9HExofCjQVECQaDwUHCAQDFiQbMiAYCxEbCgkGCBUSDBA2ExQHExEFCQEGDw8KJwKaEhARhYIPDBgZBwNniFEyAg4ZILcOE5IsSiQaJjtVCAR2Wy4OFHMzQj9ELCUUEhscHwULw0oEChITGRO8HREAAQAMAHAB1wKuAEcAABM2MzIXFhceATMyNzY0FzMyNzYzMhUUBwYVFAcOARUUFx4BFxYVFAcGIyImJy4BIyIGBw4BBwYjIicmNTQ3Njc2NTQmJyY1NBkPFioQERwVIRQPDx8PAhEyNxcJEBBFKiQYHiwXDTIQBhYiHg8eBRA0CggXFhUNCQMIIFAKAT8oKQKnBxITOyskBw0aBTA3CwwFBwwLQyk1Gh4qNiwoFxEdDwQtQCEwQCEXGAkKBw0PHy5vIQIGGnIuLhkNAAAAAQAMADsBowKfAEEAABM2MzIXFhcWFxYzMjc2MjU0NjMyFxYVFAYHBhUUBwYVFBcWFRQHBgcOASMiBicmNTQ3Njc2MzI0NzY1NCYnLgEnNB4QEA8aHTAzDQsOEwUHEh0WFBkFFxEfEw8BASMJEw0XHRYOCgILDwwLCQgPEB0jLnIBAocYGh8fIBYUHx4ZGBwOAxAXTSA+DRIRDQ8EAQIFHy8MSjcgFg8GBhEfKComMhwdFRMhGSBuDQoAAAABAA0AggJGAnwAQQAAEzYzMhcWMzIWFxYVFAYjIgYHBiMiBhUUMzI3NjMyFhUUBw4BBwYjIiY1NDc+ATc2NzY3NjU0JicmNTQmJyYnJjU0Gwk/d3BQKCYqCQEnEgcrFzoKCUE0Kjc4ISshBAdajV4zQjgEBiEnRx8mHyI0QkMkGTsWFAJyChoSICICBhc2Ixg6PgoEAwMNEAUSHBgMCBkcDQ0VHhQnISgfIg4NDgcJCAQKAgkLCxgTAAAAAAIADACJAWwBvQAUAEYAABM2NTQjIgcOAQcUBhUUMzI2MzY3Njc2MzIXFhUUIyIGFRQXFhUUKwIiBwYjIiY1NCMiBw4BBwYjIiYnJjU0Nz4BMzI0Nzb6AgoGISE1AgELAQgCIDQaNRsLDAcIBwgiDQ0RBggPAwQOCg8NCxkWHRoTEBwdCgkdEVUOCjQxAT0QAwoHCC4YAggBDAECHxGSCg4QHxxVFBcPEggLDhkcFSYZFhEEAxohHhgsGhAtEAUFAAMADACVASAB8gAOABIAPwAAEzY1NCMiBwYHFRQWMzI2JjQiFC8BFxYXFhUUBwYXFjMyNz4BNzYzMhceARUUBhUGBw4BBwYjIicmNTQ2NzY1NMoCCxIyKAEHDRVHiAgSBR8dAwQPBwQCBhAJBksTBAgRGA8JAQUtGzcyNhEQBQEOBgQBQg4DES8mFQYKBURGCAhGPQMCAwQPIhwMCAMLBx8DAQ8KDg0CCQM/PSYjDQ4LAgwgfxMSGg0AAAAAAQAMAIQBGgHRACkAABM2MzIXFhUUBw4BBwYVFBYVFzcyNzYyFRQHBiMiJy4BJyY1NDc2NSY3NqgWCAoNDR4bOwsIAQNFSBMFDiw0LRgbGRoMDxMMARAYAckIDw4OEgsJNhkSGgIIAh8BCAIGEiMmCQgUFRsZHCUcAwIjMwAAAAACAAwAigFVAq0AEQA6AAATNCMiBgcGFRQzMjc+AiI2NxM2MzIXFhUUBw4EIyIXFhUUBgcOAQciBiMiJjU2NzY7AjI2NzbCFBJGBQMPEyAJDgYCCwZqCAsLCgcDAQICAwQDBQIBTBUXOBYEDgMwKgFJRTcFARclBQMBTwRBFgoIEyEJDwkaDgFeDgwLEQ0TBhkUFQwGAwES2igtOgEBHB82XlZVQ0UAAAABAAwAiQGVAcMAKgAAEzYzMhcWFRQHBgcGBwYVFDMyNzYzMhUUBgcGIyInJicmNTQ2MzI2NzY3NvUjKCoTFBseDA9vGCIxRi4UBEEWXDc7GxMbGxEgMQoTFRkUAbESExQYHg4PCQwgBhMSIBYCCkcMNzslGhkUDgccBggXEgAAAAEADP/vAOMB0QAtAAATNjMyFx4BFRQjIicmIyIHDgEVFBceARUUBisBFxYVFAYjIicuAScmNTQ3Njc2QAUMFz8mFhoJFhkHCwYIGgECXjoYFAYCCAsIDw4NAwYHCg4RAckIHxMRCyQFBQgKZBMFAQQRBxItRSYGEg0DAwwOG01VJitPVgAAAAADAAz/vgEOAasADwAxAEkAABM2NTQjIgcOARUUFxYzMjYnNjIWMzIWFRQHBhUUBgciDgEHBiMiJyY1NDY1PgE3NjMyFzcXFhUUBwYjIicuATU0NzYzMjY1NDc2wQMUCwciKAIFDhE/SQg+CiYdCyUGLwoBCQ8GEA0LFUIBAgwXJAgKQwkGBjcUCAYMDRYBAxgTHw4UAVYKCAwBAywiBQ4aRWMOCggWJFQRCQUkAgMEAgYGFEcCCgMaFxYg8CEoJiBtHAoGByILBAIHFw4NIzkAAQAMAHwBLwIwAEsAABM2FxYzMhYVFAcGFRQXMzI2NDc2MzIXHgEVFAcOARUUFxUWFRQGIyImNTQ3NjU0IyIHBgcGFRQHBgcOASsBLgEnJjU0NzY1NCcmNTQfBQQEEQ8SBwoIAQlGGRgcDxALEwIHGQEBGBEQDwYPCQwLCBUSEBAFBRIVCRMNBAMKCwMBAisFBwocFBIOFi0nCDgOGRkIBi0SBgYSkxkCAgICBQwSDhIRHVUiGg8NDAgTER4iJSMaAgoTCwoVHiE1IUEiOTMAAAIADACIAGUCDAAQACwAABM2MzIWFAcGIyIuATc2JyY0BzYzMhcWFRQHBhUUBwYjIic0JjU0NzY0JyY1NCUJEhEUCggLAxAIAQIJBw4FEwsKEwMIDgoPEgEBCgQEBQH1FxMeDQoEBgMHAwMKVhQHDGEcG0gFDQ4LEAMQBU4eEhQYGRMJAAIADP/uAPkBzgASADcAABM2MzIWFxYVFAcGIyImNTQ3NTYHNjMyFx4BHQEOAQcOASMiJyY1NDc2MzIXFjI3Njc2NTQnJjU0twMYEBIDAhAUCAoUAQIoBBMYCQULAhEFByoOMCgXEw0EBRUTGgYFCAoGBQHDCwwVCgMMBwgZCwECAQdICxAJcCUMJXkKDRojFRMRDQgWFRMPBgZnRyMeEgcAAAAAAQAMAJABPwJOADUAABM2OwEHBgcGFRQXMzI3PgEzMhcWFRQGDwEGFRQWFxYVFCMiJyYjIgYVFAYHBiMiNTQ3Nj0BNCEKFxkEAwoFAQEKIR1GDgMBCE0BBwJFKzcaM1s7CQsOBgsKBQ4GCQI+ECsoPCMRCAEhGyoBBQcQSAMTAwkdWRsjEQxaOysjHBUGBSohSG9VDS8AAAABAAwAkgBcAnkAHQAAEzYzMhceARUUBwYHBgcGKwEiJyY1NDc2NTQjIjU0HAwLBAYTDAcMAgIFAwgGFAgFCgIFCQJtDAIFEBkPVnVoaQgEFg86WJIYIBsSHQAAAAEADACGAaEB3QBPAAABNDY1NDc2MzIXFhUUBwYVFBcWFRQrASc1LgEjIgYHDgErATc2NTQnIyIGBwYHDgErATc2NTQnJjU0MzIXFhUUFx4BPgI3Njc2MzIXFjMyARZCDxQDDgsKBwYCAiMGGwECBwosCg4VGhwHBwkCCyAICg8MDRkiBQEHBxoIDQ0NBgcCBgwFGgUJGScNBBIQAXMFUgUGBAQTDhgZPDguFgwSBSoDa14iVyk4HywwNDkDOCMvJiAMPQoYNSYqEisFBCIhDQYFAgoTByYSFjsXAAABAAwAgwEZAdkAMAAAEzYzMhUUMzI3PgEzMhcWFRQHBgcOAQcGJzU0NzY1NCcjIgYHBgcOASsBNzY1NCc1NCIQCRkKDCYMIh4aEBMOAhcECg0VAhELGQMKERMeDg0ZGRsHBgMBzgtQOFcbFhYaKyI9B2MUDAEDCxA9NSMYLQMZKT01MSFDOlg0HwcTAAIADACJAUoBxwAYADcAABMmIyIHBgcOARUUBwYzMhcWMzI3PgE9ATQnNjMyFhUUBgcOAQ8BJy4BJyY1NDc2PwEXMhYzMjc2+gYREgoJIBwoDQsHCAcMGxAUJDcNDAsfIxwRDxInJzspFxAXIxEaGSkDCwIdCxABegkKCwkIIQ4NEREWIwoRTSIKGFIDLSgUOxANNCUkAwEJFBogSR4OKigCAQsOAAAAAAIADP/6AT0BvAAVAFcAABM0IyIGBwYHBhQHBhQWMzI2NTQ3NjUnNjMyFxYXFhUUBw4BBw4BDwIOASMiJyY1NDc2NTQ3NjU0JyY1NDY3NjMyFxYyBwYVFDMyNzY1NCc0JjU0NzY3NvkIDjAFBgYHDQkQDRMzBwoeFAsHDBIQDgIEEwUNOzssCQkQIhcFBAoIBwIEBQgNBgIJBAUQBQIHBBUQAQENDh4MAWcIKhUXAwQeBgYQCzISDQkILVwEAwUbFhQEFB4rFTMuCAVAQRAFBBMuAwMkJhoOEB4XJQgLCAQCERQTCgEIBwcMBwQCBQERDQ5EHAACAAz/ygFCAbAADwBSAAATJiMiBwYVFBYzMjc+ATc0JzYzMhcWMzIXHgEVFCMiBg8BFxYUBwYVFBcWFxYVFAYHBiMiJi8BIyImJyY1NDc+ATc2NCMiBwYHBiMiJicmNTQ3NswXGh0YFxoFBCMZNAFWLRIOBQcTFxQNCQcLFAMFHBoaFwEFBgIKDw0JCwwFByYXEgQDLhQTBQkPFRQUKxQFDg4JGQoYAVUWGxwcFRoMCS0OB2MNCAkKBhEVIUIwQxMSGAkJCwYEEyEQAwkKBQYaITAHCggHHgwFEBAbDgwPBQIIDR82HBw8AAAAAAEADACCARsBxQAuAAATNjMyFxYVFAcGIyInIiYjIgYHDgIHDgEjIiY1NDc2NTQnJjQ2MzIWFxYzMjc2pyMdJQ0CFRMOBgIBAwEQJQ4IDggHChweEQ8HDQgGDhEVEAYFCggIBwGgJTYMAgsIBwEBKSEUGRQbJhsJDA8WLjgqIBYYCBEcGhAOAAABAAwAfwEQAckALwAAEzYzMhcWFAcGIyIGFRQXFhceAR8BBwYHBgciBiMiJjU3NDU2NzY1NCcuATU0Njc2hhQaKw4FDBQiGycCBR0lPA0QHBwiIBQBBAEQJwEFLy4fSjMSISsBvA0gCQwICRELAgQJDxM2GiMZGgUFBgEfDAEBAQwODQ8LDyAsIA8RDhUAAAABAAwAhQD+ApAAIgAAEjYzMhUUDwEzMhcWFRQPAREHBiMiNTQ/ASMiJyY1NDYzMjVhJg0XAgcjIQ8JPSsaEAoZCAkkJAUBIAwpAmomMxYNPBcOCBIRDf7/EQpEJFJVDQIGEjBLAAAAAAEADAB/AVUBvQA7AAATNjMyFxYVFAcGFRQXFjMyNzY3PgE1NCcmNjc+ATMyFhUUBwYVFBcWFRQjIiYnJiMiBw4BIyImJyY1NDYpCQgCChAMCg4RCggLFhsUKAEFEAYEGgsKKREYCwomDxEKEQsJCgpBHRwqBwETAaoPBAkSEUIvEA8UFwQEFxI/CwECBgwgFygsCw4dKTYkGRQQHA0TIBARGykiBhIuhgAAAAABAAwAhwFmAdMAIAAAEzQ2MxYVFAcOAQcGBw4BIyInJgMmNTQzMhceARcWMzI221gGLScWLxUZFw4WEhwGAk0CGAgLDQ0KIg8HSAE1B5cBHhwzHU4ZHB8TDAgCARwGBBIDAxwtnE8AAAIADABmAdYCCgAFAEsAAAE0IhUUMiU2MhcWFxYzMjc2MzIXHgEVFAcGFRQWMzI2NTQ3Njc2NzYzMhYVFAYHBgcOARQHBgcOASMiJicmIyIHBgcGIyI1NCcmNTQBbwgI/qMLHgsMBwoMCRITHQoKChICARIKCDAXGBIUEg4OCg4uFBIGBhgICBQSHBQSEwoPCQgdGQ8MBTAOCQE8BQUExQ0NDkVlPT0HCToaCAoEChgxOgoIGRorLBANDw0XTgoLFBMKKAgKLy0iJjxRODIGBItGOyoODQAAAAEADACHAUsCEwA1AAATNjMyFhceATMyNzYzMhUUBwYVFBcWFRQHBiMiJyY1NCYjIgcGIyInJjU0Nz4BNTQnJicmNTQUCR4TEAkOPQ8ONTIOBycnIiAQDQ0CChZFBwgvJQ8GBBIpGQ8JESUmAfoZDRUgRh0dBg8zNA4NMS0UDxURAgcHCVkpIQMKERkpGBEIBBIeLi0OCAAAAQAM/9YBfgH5ADAAABM2MzIXFhceARcWMzI2NzYzMhcWFRQHBgcGDwEOAQcGIyI1NDc2NTQnLgEnJicmNTQWDxEbHBQNDi8EBxQMHAkWIQMIITQoKVQDAwMOBgQHFTAgCAdrAgIZFQHkFTQkCgxSEyQhHEsCCh0lPTBOoAMBAQMCARkqSDIRCgMCtw0LJh8IBgAAAAEADACNAXABtgBHAAATNjMyFx4BFRQGBwYHBhUUFzI3NjMyHwEHBisBJiMiBgcGIyIHBiMiJjU0NjcyNDc2NTQ3NjU0JiMiBwYjIiYjIgYjIicmNTQYDzY8VlAmDxwtDwkaIQgFBwYPFxgSDwICBhE1BwgUEgsLERQiKh8iFRQNCBoGAwcGDAgoEw8aDjIIAgGqDBAQFBoSFBYhCQQDAgEIBQUJGBQBEwkKDQwbEhQaARAVFAoIDwoDBhoFBgoGIQgDDAACAA0AigCaAvsACwAlAAATNjMyFxYVFCMiNTQHNjMyFxYzMhUGIyIGFxQWFRQHIyImNTQ3Ni4RJCMNBzQ/BAoZHQYHCggCCQQEAgEjBx8cAwcC1yQiEg8mJw/LFhoZjIwRCwIFARYEQUohLIEAAAAAAQALAjYAlgLaAB0AABM2MzIXFhUUIyIVFBYVFCMiBwYjIicmNTQ2NzY3NFgPCQgOEAoFAgoOFx8eCgUDIAwNAgLTBw4QDwwGAgoDCSIrBAIHE1AJCgoJAAIADQAoATQCPgANAEAAABM2MzIWFRQGKwEuATU0FzYzMhYVFAYHDgEHBhUUFzIWMzI3NjMyFxYVFAYjIgcOASMiJyYHBjU0JyY1NDc+ATc2jQUZFyspEQQPFgMVGBIXGyYaDwYFLwEIARgHBzIpCQMRCQ4FBFkiFwQHCwsdJgYNIx0WAi8PGRENHgEjEwiiKDMtKCADAg0ZFw4zBQEKDAoFBg0cDgsUBgwGBwkKCQ09GCFCQQkHAAADAAsAcgHZAxcAFAAiAGQAAAA0MzIUBgcGFCMiJyY1NDYzMjc2MwMmIyIHBg8BMzI2NTQiJzYzMhYXFjMyHgEXHgEVFDMyFhUUIyInJicmIyIHBiMiNTQmIwcOARUUBiMiNTQ3NicmNTQ3PgE3NjU0Nz4BNDMyAUUJDxwTGg4WBwILBwoOEREZFxQNERcFBkcqHBBnChoSJAkMCAQbGwEIMgoIFjE0CQYFAQoZKCgXIxkGAgYdKBQSAgUODg8MPwQPBgckCAkDAxQwOQYJEg8EDRMmDg/+lTMWIR8hBQkP2B8gHCgvMgEHbwwRSh41VzMFAQYGEQceAQZgDBEiCgIIFAYFDA0GBHoEDxESBgdyIAAAAAACAAwAegFrAyoAEwBaAAATNjczMhUUBw4BIyIVFCMiJjU0Ngc2MhUUMjc2MzIeARUUBwYUIwYPARcHDgEHBhQjIgYVFBcWFxYzMj4BMx4BFRQGBw4BByMiJy4CJy4BNTQ3PgE1NDMyNTT8FxIHDAMHHQgJLB8NN1oVDi4QHBELCQYkHR9BBAO3AwIKDRY/NyYCBgUGLSAGWw0VGjQGBHMSEEMRAg0LBAsPBwgrCQoDJAUBBwQJFywPDgcRFjiBBgoGAgQHFggeBwUSATshBh8SEAEDEhclBxY7CAsQKwEcEh0aCAYhARECDg0FDD4aFwQF7iUZEyAAAAIADACFASgC8wAcAFAAABM0NjMyFxYVFAcGBwYjIhUUIyImIy4BPQE+ATMyBzYzMhYXFjMyNjMyFhUUBiMiBg8BFxYVFAcOASMiFCMiJjU0MzI1NDc+ATc2NTQnJjU0NtAyDwUBCBUUCgkODxQBCAIVCwIsEAtqDxYeNgQFDggYBggECRwuGQIDGyEGBhQhMTUiHgoJHRILBQYPFBQC2gYTAQUOHhMRFxcKCAECCg8GFzuQAwkHBwYOFx4KMF5sAwUaCg8QCBQMEAsVEgsHFCI3MlgGCRwUIgAAAAACAAwAbQIDAtoAFABwAAABNjMyFxYVFAcGIyInJjU0Nz4BNzYXNjMyFxYdAQYjIhcWFRQGBwYVFBcUFhUUDgEHDgEjIiYnJicmNTQmNTQnJiIHBhUUBwYVFBcWFRQHBiMiJjU0NzY3NjU2NTYzMhYVFBcWFxYXFhcWMzI3PgE3NgFDGRgzEhArM2xWEQwGCBszLKgGDxUPDgQGCAYCGQ0OAgEKEgMGIyUWFAoPEhFEHBMMAwYPCwUHAQYmGQ0TFAYHBAERFk8NDhEQCAUSHB8MCRA2BgQC1QUQDwsRFBcRDAoHDBAKBANzChIQIg0tDwYEEi8HCBcEHAIMAho0PgwcFwsTGxcUCAV8DA0OCwsSERYeFhILFxwOBgEICRAaNjNXZwQcExZJDQwGBTIyBgUzWBAa3UAnAAACAAwAcQHmAx8AEQB9AAATNjsBMhUHDgEiBwYjIiY1NDYHNjsBMhYXFhUUBwYjBhUUBw4BFRQXFhcWFxYzMjc2NzYzMjU0JjU0MjU0JjU0MjU0JyYHBiY1NCMiJjU0NzYzMhYXFhUUBhUGIyIXFhUUBwYXFhUUBwYHDgEjIicmIyImJy4BNTQjIjU0Nzb+HDUWHAYQKw4WDhIPFg9qFDEPGRMLDgwSJCAPEyMBCyARFhggKyEhBwYKBQMOAwoQCwkDBQ0MDwMIIRw/DxABBAYHBQINEQYBEgMrElYYDAIEDx1JHyQcCggWGgMTDAYKFSgSDRYSFxaGCwoUGQQGBAYCBQsHCl4qCgVuFwwUFSMfFhUHAxAECAcCDAMGDyMiFgYCAwQLEQ0ICRUgGRouBBEFRBsKBBAPEAYBAQUUAzEUJgYLIhwiOCYhIk1CRwAAAAACAAwAcgFuAtUAFQBPAAATNjsBBwYHBhQHBiMiJyY1NDc2Mjc2FzYzMhceARUUBw4BBwYjIgcGBwYjIiYnLgE1JicmNTQzMh8BFRQzMhcWMzI3NjMyJjMyNjU0Jj0BNMYSGhwPCyQfFgwECQ0LEhcWBQR3BAsCChcTDAMPAxQNBxcfMA4eExYTGSECBwgHBhsaBwYPERcZIw0HBgQFEioBAssKEg8kIQ4JBA0LBQcWHgoKlwsCBhMUFy0LPgpfLj8mCg0WHUYZGAMGg2oJCW5vMTdBFxiHNwIKAwcTAAAAAAMADACEAWcCwQAWACoAVwAAATYzMhQHBgcGBwYjIiYnNCY1NDc2MzITNCYrAQ4BBwYVFBcWMzI2NzY3Njc2MzIXFhUUBwYHBgcGBwYjIicmNCMiFRQGKwEuAScmNTQ3Njc2Nz4BMzIXFgENDyQVICAPDhwFCAoHAgEZHAcICAoSDDEvEBwFBxESKgwrFBAPChEFDiMODwMCBAUVBQcMCAkUE28hARYfBAEVGhYYCQdUIBcCBAKyDxAiIRUUBAEKDwEGARUWGP7rDwgBGSI6MRMGCxoVRhUSbgkCBxwSHyJsaQQFBQIVGTAHF00BPzMLEykxOAsODAkRBgkAAAIADACIAZMCtgAVAFEAAAE2MzIUBwYjIgcOASMiJyY1NDc2NzYHNjMyFhQGIyIGBwYUBw4BFRQWMzI2MzI3NjMyNjMyFRQGIyIVFAcGIyInJiMiNTQnJjU0NzY3NjMyNTQBVR8VChskBwQbEC8TDQcOFhgNFykZKjkmKwsJIjAxFQ0KCBUDEQU0BAQQESoLCT4NDFwgCRMVHAUIGBcfJQ9FGBECpREIGiIkGB4HDhAWBgUNFL4MJho0JgYHEAMCDhATCgEMCyYNDkUJEQ0FFBgREyEjDxENEA4/CAkAAAAAAgALAI4A0QKPABcALQAAEjQzMhcWFRQHBhUUBiMiJyY1NDYzMjc2BzY7AR4BFxYVFA8CIgYjIicuATU0pA0MDgYhKTggEwYBHgsPERJeCxUKFgwGAwMJHAIHARQGBgoCfxAJBAUJHCUGBzwOAgYRMREQvhMCDyATKykqZAMBCQp3OkgAAgAMAJgBQgJ/ABUAWQAAEzYyFRQzMjYzMhUUHwEHDgErATU0Nhc+ATMyFxYXHgEVFAcGFRQHBiMiNTQ3NjU0IyIHDgEHDgEjIgcGIjU0NzY1NCcmMzI3Njc2NzI3MzIVFBYzMjc0NjU2fi0qCAMSAwwWGB0WIUFaHE0RFBEOCS8HCA4ECSAHBh8OCSAKDhU/BAMUCwkeBxQOCgEGBwYCAgsNDwECAQoHCxECAgMCdwgHAwEFCAsKGhMHGRscfRAKAQQHCFwoFxAmHFgOAz8kOCIbOQkNhSYiMQYCEBYtIxIGAgwZFUhGAwEiFg4MAhACDAAAAAMADACPAXQCkwAPADQAVQAAEzYzMgcUFxYVFAYjIiY1NBcmIyIVFAYjIgYXFiMiFRQXFgcGFRQWFRYzMjc2MzI0Nz4BNTQnNjMyFxYXFhUUBgcGBwYHBiMiJy4BPQE2NzYzMhcWMzLKFAkOAQYBIwwJJIULFxJaFggHAgYMBwIECwsBBRoCCA0TDhknOzwSIioRCAsFEQwXLhsoGDccGygVA24YDgkTEwcJAooJFhMNAQQPLysLKNsSCggeBgQKAwIBBg0JIQILAzwCBRIKEVUiD1IYHRAJBBMZTRgsJxckGAcKHjIZoDQMBwgAAgAMAHUBfwKpAA4AWQAAEz4BOwEWFAcGIyInJjU0BzYzMhUUMzIWFRQHBhUUFxYjIhUUFxYzMjY3PgE3NjMyFRQHBhUUFxYXFhUUBwYjIicmIyIHBiMiJy4BNTQ3NjU0JjU0MzInJjU0zxQZEAklLTggDQQDeBAPCw4KFQYHAwUJBgoEEh5XDxEUFgQHKREaBgsHBBYODxoODAsJEBhCThcJEQUEAwcMBwEChhUOASwwOgwICiaEDQkKGQwIAwQMBwkbHCUwFWA4PyIFATQdKj0lEw8cHRICDQcFIRsTHSMOcigcBAMIBRgFDBACBQ0AAAAQAMYAAQAAAAAAAQAEAAAAAQAAAAAAAgAHAAQAAQAAAAAAAwAnAAsAAQAAAAAABAAMADIAAQAAAAAABQAPAD4AAQAAAAAABgAMAE0AAQAAAAAACgAcAFkAAwABBAkAAQAIAHUAAwABBAkAAgAOAH0AAwABBAkAAwBOAIsAAwABBAkABAAYANkAAwABBAkABQAeAPEAAwABBAkABgAYAQ8AAwABBAkACgA4AScAAwABBAkAEAAIAHUAAwABBAkAEQAOAH1NYXBpUmVndWxhckNhbGxpZ3JhcGhyIDogTWFwaSBSZWd1bGFyIDogMzEtMDMtMjAyNk1hcGkgUmVndWxhclZlcnNpb24gMDAxLjAwNk1hcGktUmVndWxhckNyZWF0ZWQgd2l0aCBDYWxsaWdyYXBoci5jb20ATQBhAHAAaQBSAGUAZwB1AGwAYQByAEMAYQBsAGwAaQBnAHIAYQBwAGgAcgAgADoAIABNAGEAcABpACAAUgBlAGcAdQBsAGEAcgAgADoAIAAzADEALQAwADMALQAyADAAMgA2AE0AYQBwAGkAIABSAGUAZwB1AGwAYQByAFYAZQByAHMAaQBvAG4AIAAwADAAMQAuADAAMAA2AE0AYQBwAGkALQBSAGUAZwB1AGwAYQByAEMAcgBlAGEAdABlAGQAIAB3AGkAdABoACAAQwBhAGwAbABpAGcAcgBhAHAAaAByAC4AYwBvAG0AAAAAAgAAAAAAAP+1ADIAAAAAAAAAAAAAAAAAAAAAAAAAAABRAAAAAQACAQIAAwAEAAUACgAPABEAHQAeACIAJAAlACYAJwAoACkAKgArACwALQAuAC8AMAAxADIAMwA0ADUANgA3ADgAOQA6ADsAPAA9AEQARQBGAEcASABJAEoASwBMAE0ATgBPAFAAUQBSAFMAVABVAFYAVwBYAFkAWgBbAFwAXQEDAKMAjQCiAMkAZQDMAGYA0ADUAGkAcAB0AHgAeQB+AkNSBG5ic3AAAQAB//8ADw==') format('opentype');
     font-weight: normal;
   }
 
@@ -18,8 +18,6 @@
     --deep: #8B3A52;
     --gold: #C9956A;
     --ink: #3A2030;
-    --petal1: #F7D6DE;
-    --petal2: #EDA8B8;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,26 +25,20 @@
   body {
     background-color: var(--cream);
     min-height: 100vh;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Mapii', Georgia, serif;
     color: var(--ink);
     overflow-x: hidden;
   }
 
-  /* Petals falling */
   .petals-canvas {
-    position: fixed;
-    top: 0; left: 0;
+    position: fixed; top: 0; left: 0;
     width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 0;
-    overflow: hidden;
+    pointer-events: none; z-index: 0; overflow: hidden;
   }
 
   .petal {
-    position: absolute;
-    top: -40px;
-    border-radius: 50% 0 50% 0;
-    opacity: 0;
+    position: absolute; top: -40px;
+    border-radius: 50% 0 50% 0; opacity: 0;
     animation: fall linear infinite;
   }
 
@@ -57,25 +49,16 @@
     100% { transform: translateY(110vh) rotate(360deg) translateX(60px); opacity: 0; }
   }
 
-  /* Cover screen */
   #cover {
-    position: fixed;
-    inset: 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: fixed; inset: 0; z-index: 10;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
     background: linear-gradient(160deg, #fce8ef 0%, #fdf1e8 50%, #fce8ef 100%);
     cursor: pointer;
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
-  #cover.hidden {
-    opacity: 0;
-    transform: scale(0.95);
-    pointer-events: none;
-  }
+  #cover.hidden { opacity: 0; transform: scale(0.95); pointer-events: none; }
 
   .cover-tulip {
     font-size: 80px;
@@ -90,184 +73,130 @@
 
   .cover-title {
     font-family: 'Mapii', Georgia, serif;
-    font-size: 52px;
-    color: var(--deep);
-    margin-top: 16px;
-    letter-spacing: 2px;
-    text-align: center;
+    font-size: 52px; color: var(--deep);
+    margin-top: 16px; letter-spacing: 2px; text-align: center;
   }
 
   .cover-subtitle {
-    font-size: 13px;
-    color: var(--rose);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-top: 8px;
+    font-family: 'Mapii', Georgia, serif;
+    font-size: 18px; color: var(--rose);
+    letter-spacing: 3px; margin-top: 8px;
   }
 
   .tap-hint {
-    position: absolute;
-    bottom: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+    position: absolute; bottom: 48px;
+    display: flex; flex-direction: column;
+    align-items: center; gap: 8px;
     animation: pulse 2s ease-in-out infinite;
   }
 
   .tap-hint span {
-    font-size: 12px;
-    color: var(--rose);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-family: 'Mapii', Georgia, serif;
+    font-size: 14px; color: var(--rose); letter-spacing: 2px;
   }
 
-  .tap-hint .arrow {
-    font-size: 20px;
-    color: var(--rose);
-  }
+  .tap-hint .arrow { font-size: 20px; color: var(--rose); }
 
   @keyframes pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.4; }
   }
 
-  /* Letter */
   #letter {
-    position: relative;
-    z-index: 5;
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 0 0 60px;
-    opacity: 0;
+    position: relative; z-index: 5;
+    max-width: 420px; margin: 0 auto;
+    padding: 0 0 60px; opacity: 0;
     transition: opacity 1s ease 0.3s;
   }
 
   #letter.visible { opacity: 1; }
 
-  /* Wax seal header */
   .letter-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 24px 32px;
-    position: relative;
+    display: flex; flex-direction: column;
+    align-items: center; padding: 48px 24px 32px;
   }
 
   .seal {
-    width: 72px;
-    height: 72px;
+    width: 72px; height: 72px;
     background: radial-gradient(circle at 40% 35%, #e8a0b0, var(--rose) 60%, var(--deep));
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     font-size: 32px;
     box-shadow: 0 4px 20px rgba(139,58,82,0.35), inset 0 2px 6px rgba(255,255,255,0.3);
     margin-bottom: 20px;
     animation: sealPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-    animation-delay: 0.8s;
-    transform: scale(0);
+    animation-delay: 0.8s; transform: scale(0);
   }
 
-  @keyframes sealPop {
-    to { transform: scale(1); }
-  }
+  @keyframes sealPop { to { transform: scale(1); } }
 
   .header-date {
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: var(--gold);
-    text-transform: uppercase;
-    margin-bottom: 4px;
+    font-family: 'Mapii', Georgia, serif;
+    font-size: 16px; letter-spacing: 3px; color: var(--gold);
   }
 
-  /* Paper card */
   .paper {
-    margin: 0 16px;
-    background: #fffaf5;
-    border-radius: 2px;
+    margin: 0 16px; background: #fffaf5; border-radius: 2px;
     padding: 36px 28px 40px;
     box-shadow: 0 2px 0 rgba(201,149,106,0.15), 0 8px 40px rgba(139,58,82,0.08), 0 1px 0 rgba(201,149,106,0.3) inset;
-    position: relative;
-    overflow: hidden;
+    position: relative; overflow: hidden;
   }
 
   .paper::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 32px;
-    width: 1px; height: 100%;
+    content: ''; position: absolute;
+    top: 0; left: 32px; width: 1px; height: 100%;
     background: rgba(242,196,206,0.4);
   }
 
   .paper::after {
-    content: '';
-    position: absolute;
-    inset: 0;
+    content: ''; position: absolute; inset: 0;
     background: repeating-linear-gradient(
-      transparent,
-      transparent 27px,
-      rgba(242,196,206,0.18) 27px,
-      rgba(242,196,206,0.18) 28px
+      transparent, transparent 27px,
+      rgba(242,196,206,0.18) 27px, rgba(242,196,206,0.18) 28px
     );
     pointer-events: none;
   }
 
   .saludo {
     font-family: 'Mapii', Georgia, serif;
-    font-size: 38px;
-    color: var(--deep);
-    margin-bottom: 20px;
-    line-height: 1.1;
-    position: relative;
-    z-index: 1;
+    font-size: 38px; color: var(--deep);
+    margin-bottom: 20px; line-height: 1.1;
+    position: relative; z-index: 1;
   }
 
   .paragraph {
-    font-size: 15.5px;
-    line-height: 1.85;
-    color: #4a2f40;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
-    opacity: 0;
-    transform: translateY(16px);
+    font-family: 'Mapii', Georgia, serif;
+    font-size: 17px; line-height: 1.9; color: #4a2f40;
+    margin-bottom: 20px; position: relative; z-index: 1;
+    opacity: 0; transform: translateY(16px);
     transition: opacity 0.7s ease, transform 0.7s ease;
   }
 
-  .paragraph.show {
-    opacity: 1;
-    transform: none;
+  .paragraph.show { opacity: 1; transform: none; }
+
+  .paragraph strong {
+    font-family: 'Mapii', Georgia, serif; color: var(--deep);
+  }
+
+  .paragraph em {
+    font-family: 'Mapii', Georgia, serif; color: var(--rose);
   }
 
   .divider {
-    text-align: center;
-    color: var(--blush);
-    font-size: 18px;
-    letter-spacing: 6px;
-    margin: 24px 0;
-    position: relative;
-    z-index: 1;
+    text-align: center; color: var(--blush);
+    font-size: 18px; letter-spacing: 6px;
+    margin: 24px 0; position: relative; z-index: 1;
   }
 
-  /* Signature */
-  .firma {
-    padding: 32px 28px 16px;
-    text-align: right;
-  }
+  .firma { padding: 32px 28px 16px; text-align: right; }
 
   .firma-text {
     font-family: 'Mapii', Georgia, serif;
-    font-size: 30px;
-    color: var(--deep);
-    line-height: 1.2;
+    font-size: 30px; color: var(--deep); line-height: 1.2;
   }
 
   .firma-heart {
-    font-size: 22px;
-    display: block;
-    margin-top: 6px;
+    font-size: 22px; display: block; margin-top: 6px;
     animation: heartBeat 1.4s ease-in-out infinite;
   }
 
@@ -279,27 +208,17 @@
     56% { transform: scale(1); }
   }
 
-  /* Footer flowers */
   .footer-flowers {
-    text-align: center;
-    padding: 24px 16px 40px;
-    font-size: 28px;
-    letter-spacing: 8px;
-    opacity: 0;
-    transition: opacity 1s ease 1.5s;
+    text-align: center; padding: 24px 16px 40px;
+    font-size: 28px; letter-spacing: 8px;
+    opacity: 0; transition: opacity 1s ease 1.5s;
   }
 
-  #letter.visible .footer-flowers {
-    opacity: 1;
-  }
+  #letter.visible .footer-flowers { opacity: 1; }
 
-  /* Decorative corner */
   .corner-deco {
-    position: fixed;
-    font-size: 40px;
-    opacity: 0.12;
-    z-index: 1;
-    pointer-events: none;
+    position: fixed; font-size: 40px; opacity: 0.12;
+    z-index: 1; pointer-events: none;
   }
   .corner-deco.tl { top: 8px; left: 8px; transform: rotate(-20deg); }
   .corner-deco.tr { top: 8px; right: 8px; transform: rotate(20deg); }
@@ -308,7 +227,6 @@
 <body>
 
 <div class="petals-canvas" id="petalsCanvas"></div>
-
 <span class="corner-deco tl">🌸</span>
 <span class="corner-deco tr">🌷</span>
 
@@ -331,44 +249,50 @@
   </div>
 
   <div class="paper">
-    <div class="saludo">Maaaa,</div>
+    <div class="saludo">Hola ma,</div>
 
     <p class="paragraph" data-delay="0">
-      Aunque no suelo expresar todo lo que siento o pienso, hoy quiero aprovechar este día para decirte algo que quizás no te digo tan seguido como debería: <strong>gracias</strong>.
+      Tal vez te estés preguntando qué es esto. Bueno, este link es una carta. En este tiempo me di cuenta de que escribiendo expreso las cosas que siento al 100%; por alguna razón se me facilita más. Tú sabes, loquera mía jajajaja.
     </p>
+
+    <div class="divider">✦ ✦ ✦</div>
 
     <p class="paragraph" data-delay="1">
-      Gracias por tu amor, por tu paciencia, por tus consejos y por cada sacrificio que has hecho por mí. Gracias por estar presente en los momentos importantes, por apoyarme cuando lo he necesitado y por enseñarme tantas cosas que me acompañan cada día.
+      Ma, aunque no suelo expresar todo lo que siento o pienso, hoy quiero aprovechar este día para decirte algo que quizás no te digo tan seguido como debería: <strong>gracias.</strong>
     </p>
-
-    <div class="divider">✦ ✦ ✦</div>
 
     <p class="paragraph" data-delay="2">
-      Admiro tu fortaleza, tu dedicación y la forma en que siempre buscas lo mejor para quienes amas. Me has enseñado con tu ejemplo a ser perseverante, a enfrentar los retos con valentía y a valorar a las personas que tengo a mi alrededor.
-    </p>
-
-    <p class="paragraph" data-delay="3">
-      Quiero que sepas que valoro todo lo que haces por mí, incluso aquellas cosas que a veces pasan desapercibidas. Muchas veces no encuentro las palabras adecuadas para expresar mis sentimientos, pero eso no significa que no los sienta. <strong>Te quiero, te admiro</strong> y estoy muy agradecida de tenerte como mamá.
+      Gracias por tu amor, por tu paciencia, por tus consejos y por cada sacrificio que has hecho por mí. Gracias por siempre estar presente, por apoyarme cuando lo necesito y por acompañarme, aun así parezca que esté un poco lejos. Como hemos hablado este último año, al afrontar algunas cositas de mi vida, la consecuencia ha sido apartarme un poco de ustedes, pero realmente gracias por entenderme y darme mi espacio. Sé que eso es algo que te ha costado, pero también creo que eso hace parte un poco de crecer.
     </p>
 
     <div class="divider">✦ ✦ ✦</div>
 
-    <p class="paragraph" data-delay="4">
-      Gracias por escucharme, por comprenderme, por celebrar mis alegrías y por acompañarme en los momentos difíciles. Gracias por ser esa persona en la que siempre puedo confiar.
+    <p class="paragraph" data-delay="3">
+      Hay muchas cosas que admiro de ti, pero una de las que más valoro es la forma en que me quieres. Siempre encuentras la manera de hacerme sentir acompañada, escuchada y apoyada, incluso cuando me alejo o cuando no sé cómo expresar lo que siento. Gracias por todo lo que me has enseñado, por tus consejos, por tu apoyo y por estar siempre para mí.
     </p>
 
+    <p class="paragraph" data-delay="4">
+      Quiero que sepas que valoro todo lo que haces por mí, incluso aquellas cosas que a veces pasan desapercibidas. Y como sabes, aunque por lo general no diga los sentimientos o cosas que estoy sintiendo, no significa que no lo sienta. <strong>Te quiero, te admiro</strong> y estoy muy agradecida de tenerte como mamá.
+    </p>
+
+    <div class="divider">✦ ✦ ✦</div>
+
     <p class="paragraph" data-delay="5">
-      Hoy deseo que tengas un día lleno de felicidad, amor y tranquilidad, porque te mereces todo lo bueno que la vida pueda ofrecer. Espero que recuerdes siempre lo especial que eres y lo mucho que significas para mí.
+      Gracias por escucharme, por comprenderme, por celebrar mis alegrías y por acompañarme en los momentos difíciles. Gracias por ser esa persona en la que siempre puedo confiar. Gracias por siempre estar, por nunca dejarme sola y siempre apoyarme en todo, aunque a veces sea un poquito necia <em>(lo reconozco, y no pienses que es solo contigo, es con todo el mundo)</em>.
     </p>
 
     <p class="paragraph" data-delay="6">
-      No podría haber pedido una mejor mamá. Gracias por ser tú, por tu amor incondicional y por todo lo que haces cada día.
+      Hoy deseo que tengas un día lleno de felicidad, amor y tranquilidad. Espero que recuerdes siempre lo especial que eres y lo mucho que significas para mí.
+    </p>
+
+    <p class="paragraph" data-delay="7">
+      No podría haber pedido una <strong>mejor mamá.</strong> Gracias por ser tú, por tu amor incondicional y por todo lo que haces cada día.
     </p>
   </div>
 
   <div class="firma">
     <div class="firma-text">
-      Con todo mi amor,<br>
+      Te amo muchísimo,<br>
       María Paula 🌷
       <span class="firma-heart">❤️</span>
     </div>
@@ -378,7 +302,6 @@
 </div>
 
 <script>
-  // Create petals
   function createPetals() {
     const canvas = document.getElementById('petalsCanvas');
     const colors = ['#F7D6DE','#EDA8B8','#F2C4CE','#fcd5dc','#f9c0cb'];
@@ -386,16 +309,7 @@
       const p = document.createElement('div');
       p.classList.add('petal');
       const size = 8 + Math.random() * 14;
-      p.style.cssText = `
-        width:${size}px; height:${size * 0.7}px;
-        left:${Math.random()*100}%;
-        background:${colors[Math.floor(Math.random()*colors.length)]};
-        animation-duration:${6 + Math.random()*8}s;
-        animation-delay:${Math.random()*10}s;
-        opacity:0;
-        border-radius:${Math.random() > 0.5 ? '50% 0 50% 0' : '0 50% 0 50%'};
-        transform:rotate(${Math.random()*360}deg);
-      `;
+      p.style.cssText = `width:${size}px;height:${size*0.7}px;left:${Math.random()*100}%;background:${colors[Math.floor(Math.random()*colors.length)]};animation-duration:${6+Math.random()*8}s;animation-delay:${Math.random()*10}s;opacity:0;border-radius:${Math.random()>0.5?'50% 0 50% 0':'0 50% 0 50%'};transform:rotate(${Math.random()*360}deg);`;
       canvas.appendChild(p);
     }
   }
@@ -406,21 +320,14 @@
     document.getElementById('cover').classList.add('hidden');
     const letter = document.getElementById('letter');
     letter.classList.add('visible');
-
-    // Staggered paragraph reveal
     const paragraphs = document.querySelectorAll('.paragraph');
     paragraphs.forEach((p, i) => {
-      setTimeout(() => {
-        p.classList.add('show');
-      }, 600 + i * 350);
+      setTimeout(() => { p.classList.add('show'); }, 600 + i * 350);
     });
   }
 
-  // Scroll-triggered paragraphs too (for slow readers)
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) e.target.classList.add('show');
-    });
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
   }, { threshold: 0.2 });
 
   document.querySelectorAll('.paragraph').forEach(p => observer.observe(p));
